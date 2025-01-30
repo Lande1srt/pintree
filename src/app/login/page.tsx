@@ -82,17 +82,17 @@ export default function LoginPage() {
       <div className="hidden md:flex md:w-1/2 bg-gradient-to-br from-green-100 to-blue-100 p-12 text-black">
         <div className="max-w-xl mx-auto flex flex-col justify-center">
           <Image 
-            src="/logo.svg"
-            alt="Pintree Logo"
+            src="https://files-plus.coldsea.vip/app-files/istart/star.png"
+            alt="iStart Icon"
             width={40}
             height={40}
             className="mb-8"
           />
           <h1 className="text-4xl font-bold mb-6">
-            Welcome to Pintree
+            Welcome to iStart
           </h1>
           <p className="text-xl opacity-90 leading-relaxed">
-            A powerful bookmark management platform to help you better organize and share web resources.
+            iStart是一个由Lande部署并管理的网络书签收录页面，请在右侧登录以管理数据。
           </p>
         </div>
       </div>
@@ -103,8 +103,8 @@ export default function LoginPage() {
           {/* 移动端 Logo */}
           <div className="md:hidden text-center mb-8">
             <Image 
-              src="/logo.svg"
-              alt="Pintree Logo"
+              src="https://files-plus.coldsea.vip/app-files/istart/star.png"
+              alt="iStart Icon"
               width={60}
               height={60}
               className="mx-auto"
@@ -112,8 +112,8 @@ export default function LoginPage() {
           </div>
 
           <div className="text-center">
-            <h2 className="text-3xl font-bold text-gray-900">Login to Admin</h2>
-            <p className="mt-2 text-gray-600">Manage your bookmark collections</p>
+            <h2 className="text-3xl font-bold text-gray-900">管理员登录</h2>
+            <p className="mt-2 text-gray-600">管理此站上的书签</p>
           </div>
 
           <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
@@ -121,7 +121,7 @@ export default function LoginPage() {
               <Input
                 name="email"
                 type="email"
-                label="Email Address"
+                label="电子邮箱地址"
                 required
                 autoComplete="email"
                 className="h-12"
@@ -129,7 +129,7 @@ export default function LoginPage() {
               <Input
                 name="password"
                 type="password"
-                label="Password"
+                label="管理员密码"
                 required
                 autoComplete="current-password"
                 className="h-12"
@@ -153,7 +153,7 @@ export default function LoginPage() {
                   checked={initializeDatabase}
                   onChange={(e) => setInitializeDatabase(e.target.checked)}
                 />
-                <span className="ml-2 text-sm text-gray-600">Initialize Database</span>
+                <span className="ml-2 text-sm text-gray-600">初始化数据库</span>
               </label>
             </div>
 
@@ -172,10 +172,10 @@ export default function LoginPage() {
               {loading ? (
                 <div className="flex items-center justify-center">
                   <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin mr-2" />
-                  Logging in...
+                  登录中...
                 </div>
               ) : (
-                "Login"
+                "登录"
               )}
             </Button>
 
