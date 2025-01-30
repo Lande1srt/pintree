@@ -111,7 +111,7 @@ export function SearchBar({
     ChatGPT: "https://chatgpt.com/?q=",
     Perplexity: "https://www.perplexity.ai/?q=",
     ThinkAny: "https://thinkany.so/search?q=",
-    "秘塔AI搜索": "https://metaso.cn/?q=",
+    "秘塔AI": "https://metaso.cn/?q=",
     "Google私有镜像": "https://g.vlstar.vip/search?q="
   };
 
