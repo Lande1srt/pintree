@@ -112,7 +112,7 @@ export function SearchBar({
     Perplexity: "https://www.perplexity.ai/?q=",
     ThinkAny: "https://thinkany.so/search?q=",
     "秘塔AI搜索": "https://metaso.cn/?q=",
-    "360AI搜索": "https://www.sou.com/?q="
+    "Google私有镜像": "https://g.vlstar.vip/search?q="
   };
 
   useEffect(() => {
